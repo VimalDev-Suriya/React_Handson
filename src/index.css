@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  width: 90%;
+  max-width: 43rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: white;
+  margin: 3rem auto;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+}
+
+.form-control input,
+.form-control label {
+  display: block;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-control input,
+.form-control select {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+}
+
+.form-control input:focus {
+  outline: none;
+  border-color: #240370;
+  background-color: #e0d4fd;
+}
+
+.control-group {
+  display: flex;
+  column-gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.control-group .form-control {
+  min-width: 15rem;
+  flex: 1;
+}
+
+button,.button {
+  font: inherit;
+  background-color: #240370;
+  color: white;
+  border: 1px solid #240370;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul{
+  display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+li{
+  cursor:pointer;
+  flex:auto;
+}
+
+li.is-active{
+  background-color:blue;
+  color: white;
+}
+
+th,td{
+  padding:0 5rem;
+}
+
+button:hover,
+button:active,
+.button:hover,
+.button:active  {
+  background-color: #33059e;
+  border-color: #33059e;
+}
+
+.form-actions {
+  text-align: right;
+}
+
+.form-actions button {
+  margin-left: 1rem;
+}
+
+.invalid input {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+.invalid input:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}
+
+.error-text {
+  color: #b40e0e;
+}
+
+button:disabled{
+  cursor: not-allowed;
+  background-color: #3f3f3f;
+  color: #fff;
+  opacity: 0.4;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+.formControl{
+  margin: 1rem 0;
+}
+
+.mb0{
+  margin-bottom: 0;
+}
+
+.mb1{
+  margin-bottom: 1rem;
+}
+
+.my2{
+  margin: 2rem 0;
+}
+
+.card {
+  transition: height 0.5s ease-in-out;
+  will-change: height;
+}
+
+.card-text {
+  min-width: 236px;
+  min-height: 350px;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+.li-content {
+height: 25px;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex .card{
+  margin: 0 10px;
+  flex-grow: 1;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.user {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #b3e3ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  height: 300px;
+  margin: 20px;
+}
+
+.paginationBttns {
+  width: 80%;
+  /* height: 40px; */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #2b2eff;
+  color: #2b2eff;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: white;
+  background-color: #2b2eff;
+}
+
+a.paginationActive {
+  color: white;
+  background-color: #2b2eff;
+}
+
+.paginationDisabled a {
+  color: grey;
+  background-color: grey;
+}
+
+
+.pageNumbers {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pageNumbers li {
+  padding: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.pageNumbers li.active {
+  background-color: white;
+  color: black;
+}
+
+.pageNumbers li button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.pageNumbers li button:hover {
+  background-color: white;
+  color: black;
+}
+.pageNumbers li button:focus {
+  outline: none;
+}
+
+.loadmore {
+  padding: 1rem;
+  background-color: transparent;
+
+  color: white;
+  font-size: 1.2rem;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+input{
+  height: 50px;
+}
+
+.error-text{
+  color: red;
+}
